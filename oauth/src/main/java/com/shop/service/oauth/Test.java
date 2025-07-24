@@ -1,0 +1,14 @@
+package com.shop.service.oauth;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.jwt.Jwt;
+import org.springframework.security.jwt.JwtHelper;
+
+public class Test {
+    public static void main(String[] args) {
+        String str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mbyI6IntcImFjY291bnROb25FeHBpcmVkXCI6dHJ1ZSxcImFjY291bnROb25Mb2NrZWRcIjp0cnVlLFwiYXV0aG9yaXRpZXNcIjpbe1wiYXV0aG9yaXR5XCI6XCJvYXV0aFwifV0sXCJjcmVkZW50aWFsc05vbkV4cGlyZWRcIjp0cnVlLFwiZGVwdElkXCI6MSxcImVuYWJsZWRcIjp0cnVlLFwiZnJlZXplXCI6MCxcImlkXCI6MSxcImluc2VydFRpbWVcIjoxNjE3MjExMTc4MDAwLFwibmlja25hbWVcIjpcIui2hee6p-euoeeQhuWRmFwiLFwicGFzc3dvcmRcIjpcIiQyYSQxMCRCak9rL05YQkI5S3dPdlVJOHYuS2Z1V1pLVFFidVNkVnlHVXQ3THFSVVh1RDl5WjdMd0lrQ1wiLFwicm9sZUlkXCI6MSxcInVzZXJuYW1lXCI6XCJhZG1pblwifSIsImF1ZCI6WyJvcmRlciJdLCJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImNsaWVudF8yIl0sImV4cCI6MTYxNzM3NjUxMSwiYXV0aG9yaXRpZXMiOlsib2F1dGgiXSwianRpIjoiNmQzOGM2ZTQtNjU5MC00ODk4LTk4NjItNTM5NDNjMzkyOWNkIiwiY2xpZW50X2lkIjoiY2xpZW50XzIifQ.LIo8tbmJC_PGZLMLmZbRGiadBL2afuA4Bpt_x5o19lg";
+        Jwt res = JwtHelper.decode(str);
+        System.out.println(res.getClaims());
+
+    }
+}

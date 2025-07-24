@@ -1,0 +1,106 @@
+2025-07-22 15:30:19.348  INFO 51964 --- [main] com.shop.service.shop.TestLock           : The following profiles are active: test
+2025-07-22 15:30:20.064  WARN 51964 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2025-07-22 15:30:20.347  INFO 51964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-07-22 15:30:20.350  INFO 51964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-22 15:30:20.399  INFO 51964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2025-07-22 15:30:20.494  WARN 51964 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-07-22 15:30:20.735  INFO 51964 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a545f8f2-2760-3eb8-9712-d2c8343ca959
+2025-07-22 15:30:20.832  INFO 51964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.shop.service.module.feign.TestFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-07-22 15:30:20.833  INFO 51964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.shop.service.module.feign.TokenService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-07-22 15:30:22.171  INFO 51964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2025-07-22 15:30:22.186  INFO 51964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22 15:30:22.186  INFO 51964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-22 15:30:22.317  INFO 51964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-22 15:30:22.318  INFO 51964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2968 ms
+2025-07-22 15:30:22.485  WARN 51964 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-07-22 15:30:22.486  INFO 51964 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-07-22 15:30:22.503  INFO 51964 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@49671897
+2025-07-22 15:30:26.112  WARN 51964 --- [main] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2025-07-22 15:30:26.183  WARN 51964 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2025-07-22 15:30:26.183  INFO 51964 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-07-22 15:30:26.485  INFO 51964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2025-07-22 15:30:28.442  INFO 51964 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2025-07-22 15:30:28.637  INFO 51964 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2b36d6fe-0231-484d-9c73-a3ed123ecf5e
+
+2025-07-22 15:30:28.926  INFO 51964 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14ba7f15, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a7fc4c1, org.springframework.security.web.header.HeaderWriterFilter@220cda54, org.springframework.security.web.authentication.logout.LogoutFilter@6e12f38c, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2e40ea48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8b1170f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bbc1b90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55cb3b7, org.springframework.security.web.session.SessionManagementFilter@71d78cac, org.springframework.security.web.access.ExceptionTranslationFilter@2c3b0cc8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cbb6c41]
+2025-07-22 15:30:31.664  WARN 51964 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2025-07-22 15:30:31.856  INFO 51964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52673 (http) with context path ''
+2025-07-22 15:30:31.900  INFO 51964 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP shop-service 192.168.56.1:52673 register finished
+2025-07-22 15:30:33.003  INFO 51964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2025-07-22 15:30:33.005  INFO 51964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-22 15:30:33.005  INFO 51964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-07-22 15:30:33.030  INFO 51964 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-07-22 15:30:33.030  INFO 51964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2025-07-22 15:30:33.042  INFO 51964 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2025-07-22 15:30:33.080  INFO 51964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52692 (http) with context path ''
+2025-07-22 15:30:34.641  INFO 51964 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2025-07-22 15:30:34.646  INFO 51964 --- [main] com.shop.service.shop.TestLock           : Started TestLock in 17.96 seconds (JVM running for 19.053)
+2025-07-22 15:30:36.968  INFO 51964 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2025-07-22 15:30:36.971  INFO 51964 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2025-07-22 15:30:36.974  INFO 51964 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2025-07-22 15:30:38.848  WARN 51964 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=shop-service, managementUrl=http://wao.mshome.net:52692/actuator, healthUrl=http://wao.mshome.net:52692/actuator/health, serviceUrl=http://wao.mshome.net:52673/) at spring-boot-admin ([http://localhost:9000/instances]): I/O error on POST request for "http://localhost:9000/instances": Connect to localhost:9000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect. Further attempts are logged on DEBUG level
+2025-07-22 15:30:49.106  INFO 51964 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-07-22 15:30:49.116  WARN 51964 --- [SpringContextShutdownHook] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:332) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:297) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:190) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:153) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:410) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1013) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93) [spring-cloud-context-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170) [spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+
+2025-07-22 15:30:49.117  WARN 51964 --- [SpringContextShutdownHook] s.c.a.AnnotationConfigApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:332) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:297) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:190) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:153) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:410) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1013) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:979) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:93) [spring-cloud-context-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1092) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1085) [spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1061) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170) [spring-boot-2.3.7.RELEASE.jar:2.3.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949) [spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+

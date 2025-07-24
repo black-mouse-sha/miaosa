@@ -1,0 +1,81 @@
+server:
+  port: 8000 #本服务端口8000
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9000 #springboot admin的连接地址，用来监控该服务
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #springcloud nacos的连接地址和端口，用来监控发现和注册服务
+    gateway:
+      routes: #配置gateway的转发规则
+        - id: user-service #规则id
+          uri: lb://user-service #转发到服务端的名称 lb://开头可以让转发规则去注册中心中自动匹配转发的服务地址
+          predicates: #配置触发转发的请求前缀，当访问带有/sp-service/v1/user/字样的地址时会转发到user-service服务中
+            - Path=/sp-service/v1/user/**
+          filters:
+            #重写转发路径去掉请求头 如http://localhost:8000/sp-service/v1/user/test/hello
+            #就相当于调用了user-service服务中的/test/hello这个接口
+            - RewritePath=/sp-service/v1/user/(?<segment>.*), /$\{segment}
+        - id: shop-service
+          uri: lb://shop-service
+          predicates:
+            - Path=/sp-service/v1/shop/**
+          filters:
+            - RewritePath=/sp-service/v1/shop/(?<segment>.*), /$\{segment}
+        - id: log-service
+          uri: lb://log-service
+          predicates:
+            - Path=/sp-service/v1/log/**
+          filters:
+            - RewritePath=/sp-service/v1/log/(?<segment>.*), /$\{segment}
+        - id: static-service
+          uri: lb://log-service
+          predicates:
+            - Path=/public/**
+          filters:
+            - RewritePath=/public/(?<segment>.*), /public/$\{segment}
+        - id: test-service
+          uri: lb://test-service
+          predicates:
+            - Path=/sp-service/v1/test/**
+          filters:
+            - RewritePath=/sp-service/v1/test/(?<segment>.*), /$\{segment}
+
+
+      discovery: #服务发现配置，自动发现注册中心的服务并且支持小写字母匹配
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      enabled: true #让gateway生效
+      default-filters: #配置全局过滤器
+        - name: Hystrix  #hystrix熔断过滤器的配置
+          args:
+            name: default #当请求转发的服务没有开启的时候会调用本服务的/defaultfallback并返回相应的结果
+            fallbackUri: 'forward:/defaultfallback'
+  application:
+    name: gateway-service #配置gateway注册的服务名称
+hystrix: #熔断降级的配置
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 30000
+  shareSecurityContext: true
+management: #springboot admin健康监测的可检测数据配置，默认监控所有数据
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging: #日志规则配置
+  file:
+    path: shop-log/gateway-service.log
+  level:
+    root: debug
